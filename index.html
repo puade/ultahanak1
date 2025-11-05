@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="google" content="notranslate">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ica & Santo</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=DM Serif Text|cambria|Autour One|Bettrish|Merienda|Amita|Kumar One|Lobster|Redressed|Lavishly Yours|Sunshine|Rouge Script|Toasty Milk' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Open Graph meta tags untuk thumbnail dan deskripsi ketika link dibagikan -->
+  <meta property="og:title" content="Ica & Santo">
+  <meta property="og:description" content="Undangan Pernikahan Digital Ica & Santo.">
+  <meta property="og:image" content="https://puade.github.io/ica-santo/thumbnail.jpg"> <!-- Gambar Thumbnail -->
+  <meta property="og:url" content="https://puade.github.io/ica-santo/"> <!-- Ganti dengan URL kamu -->
+  <meta property="og:type" content="website">
+
+    <!-- Favicon untuk browser desktop -->
+    <link rel="icon" href="fav/favicon.ico" type="image/x-icon">
+  
+    <!-- Favicon untuk perangkat dengan resolusi tinggi -->
+    <link rel="icon" href="fav/favicon.png" type="image/png">
+    
+    <!-- Favicon untuk perangkat iOS (Apple Touch Icon) -->
+    <link rel="apple-touch-icon" href="fav/favicon-180x180.png">
+    
+    <!-- Favicon untuk perangkat Android dan layar beresolusi tinggi -->
+    <link rel="icon" sizes="192x192" href="fav/favicon-192x192.png">
+
+</head>
+<body>
+
+  <button id="music-control" class="tombolmusik hidden">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#ffffff" class="bi bi-pause-circle-fill" viewBox="0 0 16 16">
+      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.25 5C5.56 5 5 5.56 5 6.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C7.5 5.56 6.94 5 6.25 5m3.5 0c-.69 0-1.25.56-1.25 1.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C11 5.56 10.44 5 9.75 5"/>
+    </svg>
+  </button>
+
+  <!-- Frame Cover -->
+<div class="frame frame-cover" id="frame-cover">
+
+   <!-- Menambahkan GIF sebagai elemen terpisah -->
+
+  <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNng4cTNwcHJ5bTYxZmg5ZzJhZDdlZm9rcTVneHdwb3R2dHB4emV0diZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/wR77d4zcNpkJZv9HV1/giphy.gif" alt="Background GIF" class="gif-background">
+    <img src="img/gbatas.png" alt="hiasan atas" class="gbatas"> 
+    <img src="img/gbbawah.png" alt="hiasan bawah" class="gbbawah">
+
+  <div>
+      <h4 class="transisi transisi-atas" style="font-size: 3vh; color: #464b3c;">My Birthday</h4>
+      <h1 class="transisi transisi-kanan" style="font-size: 7vh; color: #d35d49;">Raudhan</h1>
+      <p class="transisi transisi-bawah" style="font-size: 2vh; color: #464b3c;">Minggu, 02 November 2025</p>
+  </div>
+
+    <!-- Gambar Lingkaran Tambahan -->
+    <div class="cover-circle transisi transisi-bawah">
+      <img src="img/foto-bulat.png" alt="Foto Pasangan" class="circle-image">
+    </div>
+  
+  <div class="tombolcover">
+      <div class="transisi transisi-bawah" style="font-size: 2vh; color: #464b3c;">Kepada Yth</div>
+      <h1 id="recipient-name" class="transisi transisi-bawah" style="background-color: rgba(255, 255, 255, 0,5); border-radius: 3vh; padding: 5px; font-size: 20px; color: #464b3c; text-shadow: 2px 2px 8px white; "></h1>
+      <button id="open-music-btn" class="btn btn-dark mt-3 transisi transisi-atas" onclick="showFrame1()"><i class="fas fa-envelope-open" style="font-size: 14px; margin-right: 8px;"> </i> Buka Undangan</button>
+      <p><p>
+  </div>
+</div>
+
+
+  <!-- Frame 3 -->
+  <div class="frame frame-3" id="frame-3">
+    <div>
+      <div class="transisi transisi-atas">
+          <h5 style="font-size: 2vh;">Assalamu'alaikum Warahmatullahi Wabarakatuh</h5><br/>
+          <h5 style="font-size: 2vh;">Hai teman-teman!</h5>
+          <h5 style="font-size: 2vh;">Datang ke acara ulang tahunku yang</h5> 
+         <h2 class="transisi transisi-kanan" style="font-size: 7vh; color: #d35d49;">ke-1</h2>
+      </div>
+      <img class="transisi transisi-kiri" src="img/foto-bulat.png" alt="Groom" style="width: 50%; padding-top: 20px;">
+          <p class="transisi transisi-kanan" style="font-size: 40px; color: #d35d49;">Raudhan Alhanan</p>
+          <p class="transisi transisi-atas">Anak pertama dari :<br/> Bapak Rocky dan Ibu Franika</p>
+          <a href="https://www.instagram.com/rockychk" target="_blank" class="btn btn btn-dark mt-3 btn-block; width:80px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+            </svg>              
+              @raudhan
+          </a>      
+    </div>
+    <img src="img/gbatas.png" alt="hiasan atas" class="gbatas">
+    <img src="img/gbbawah.png" alt="hiasan bawah" class="gbbawah">
+  </div>
+  
+
+  <!-- Frame 1 -->
+  <div class="frame frame-1" id="frame-1">
+    
+    <div class="dandiantara">
+      <img src="bismillah.png" class="transisi transisi-atas" style="width: 60% ; margin-bottom: 20px;"><br/>
+
+      <p class="transisi transisi-bawah" style="font-size: 16px; color: #464b3c; "><i>"Barakallah fii umrik, semoga Allah memberkahimu dengan ilmu dan hikmah, serta perjalanan hidupmu diwarnai kedamaian dan sukacita. Dunia tak hanya menyambutmu, tapi juga bangga karena telah melahirkan anak sebaik kamu. Semoga kamu tumbuh dengan hati yang lembut dan pikiran yang tajam"</i></p>
+      <p class="transisi transisi-bawah" style="font-size: 18px; color: #464b3c; ">Aamiin yaa Allah</p>
+    </div>
+    <img src="img/gbatas.png" alt="hiasan atas" class="gbatas">
+  </div>
+
+  <!-- Frame 4 -->
+  <div class="frame frame-4" id="frame-4">
+    <div>
+      <h1 class="transisi transisi-bawah" style="font-size: 50px; color: #d35d49;">Acara</h1>
+      <div id="countdown" class="countdown transisi transisi-atas"></div>
+      <div class="event">
+        <p class="transisi transisi-kiri" style="margin-bottom: 30px; font-size: 18px;">yang Insya Allah akan dilaksanakan pada:</p>
+        <p class="transisi transisi-kanan" style="font-size: 18px; text-align: left;"><i class="fa-regular fa-calendar-days"></i> Sabtu, 08 November 2025</p>
+        <p class="transisi transisi-kiri" style="font-size: 18px; text-align: left;"><i class="fa-regular fa-clock"></i> Pukul 18.30 WITA</p>
+        <p class="transisi transisi-bawah" style="font-size: 18px; text-align: left;"><i class="fa-solid fa-location-dot"></i> RUMAH KAMI</p>
+        <p class="transisi transisi-atas" style="font-size: 16px; text-align: left;">Jln. Irigasi Lomaya Desa Kramat Kecamatan Tapa Kompleks Lapangan IPPOT Tapa</p>
+        <a href="https://maps.app.goo.gl/gonD64Emrfx5BLdW7" target="_blank" class="btn btn btn-dark mt-3 btn-block">Buka Google Maps</a>
+      </div>
+    </div>
+    <img src="img/gbatas.png" alt="hiasan atas" class="gbatas">
+    <img src="img/gbbawah.png" alt="hiasan bawah" class="gbbawah">
+  </div>
+  
+  <!-- Frame 7 -->
+  <div class="frame frame-7" id="frame-7">
+    <h1 class="transisi transisi-bawah" style="font-size: 50px; color: #d35d49;">Tanda Kasih</h1>
+    <p class="transisi transisi-atas" style="font-size: 14px; ">Terima kasih telah menambah semangat kegembiraan ulang tahun anak kami dengan kehadiran dan hadiah indah Anda</p>
+
+    <div class="gift-card transisi transisi-kiri">
+      <div class="gift-card-logo-bri">
+        <img src="https://buatlogoonline.com/wp-content/uploads/2022/10/Logo-Bank-BRI.png" alt="Bank Mandiri" style="width:50px;">
+      </div>
+      <p>Rocky</p>
+      <h3>1234 5678 910</h3>
+      <button class="btn btn btn-dark mt-3 btn-block" onclick="copyToClipboard('12345678910')">Salin Nomor</button>
+    </div>
+    <img src="img/gbatas.png" alt="hiasan atas" class="gbatas">
+    <img src="img/gbbawah.png" alt="hiasan bawah" class="gbbawah">
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+      <div class="modal-header">
+          <span class="close" onclick="closeModal()">&times;</span>
+      </div>
+      <div class="modal-content">
+          <img id="modal-image" src="" alt="Modal Image">
+      </div>
+      <div class="modal-footer">
+          <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+          <button class="next" onclick="changeSlide(1)">&#10095;</button>
+      </div>
+  </div>
+  </div>
+
+
+  <!-- Frame 6 -->
+  <div class="frame frame-6" id="frame-6">
+    <h1 class="transisi transisi-bawah">
+      <span style="font-size: 70px; margin-left:-70px; color: #d35d49;" >Doa</span>  
+      <span style="font-family: Bettrish; color: #464b3c; font-size: 80px; padding-top: 50px;position: absolute; margin-left: -70px; ">Ucapan</span>  
+    </h1>
+
+    <div id="spinner" class="spinner" style="display:none;">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden"></span>
+      </div>
+    </div>
+    
+    <form id="formPernikahan" class="ucapan-section" style="font-size: 16px; text-align: left; color: #464b3c; padding-top: 70px;">
+      <div class="form-group transisi transisi-kiri">
+        <label for="nama" >Nama:</label>
+        <input type="text" class="form-control" id="nama" name="nama" required>
+      </div>
+      <div class="form-group transisi transisi-kiri">
+        <label for="kehadiran">Konfirmasi Kehadiran:</label>
+        <select class="form-control" id="kehadiran" required>
+          <option value="Hadir">Hadir</option>
+          <option value="Tidak Hadir">Tidak Hadir</option>
+        </select>
+      </div>
+      <div class="form-group transisi transisi-kiri">
+        <label for="pesan">Kirim Doa & Ucapan:</label>
+        <textarea class="form-control" id="pesan" name="pesan" rows="3" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-dark btn-block">Kirim</button>
+    </form>
+    <div class="ucapan-container" id="ucapan"></div>
+    <div id="respon" ></div> <!-- Untuk menampilkan status respon -->
+    <img src="img/gbatas.png" alt="hiasan atas" class="gbatas">
+    <img src="img/gbbawah.png" alt="hiasan bawah" class="gbbawah">
+  </div>
+
+  <!-- Frame 2 -->
+  <div class="frame frame-2" id="frame-2">  
+
+    <br class="transisi transisi-atas"><u>Turut mengundang:</u>
+    <div class="transisi transisi-kanan">Bapak Fulan bin Fulan, S.Pd</div>
+    
+    <hr style="padding-top: 10px;"></hr>
+     
+    <br class="transisi transisi-atas"><u>Kami yang berbahagia:</u>
+    <div class="transisi transisi-kanan">Keluarga Rocky</div>
+    <div class="transisi transisi-kiri">Keluarga Franika</div>
+    
+    <hr style="padding-top: 10px;"></hr>
+
+    <p class="transisi transisi-bawah"><i>Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa kepada anak kami. Atas kehadiran dan doanya, kami ucapkan terima kasih.</i></p>
+
+    <h1 class="transisi transisi-bawah" style="margin-top: 20px;">
+      <span style="font-size: 50px; margin-left:-70px; color: #d35d49;" >Raudhan</span>  
+      <span style="font-family: Bettrish; color: #464b3c; font-size: 80px; padding-top: 20px;position: absolute; margin-left: -70px; ">Alhanan</span>  
+    </h1>
+     
+    <img src="img/gbatas.png" alt="hiasan atas" class="gbatas">
+    <img src="img/gbbawah.png" alt="hiasan bawah" class="gbbawah">
+
+  <footer style="padding-top: 10px; padding-bottom: 10px;">
+    <a href="https://wa.me/+6289609745090?text=Hai%20Admin,%20Saya%20ingin%20pesan%20Undangan%20Digital" style="color: #e1f2ff;">
+    <img src="https://img.icons8.com/?size=20&id=uZWiLUyryScN&format=png&color=000000" />
+      Pesan Undangan Digital di <b>Puade</b>
+    </a>
+  </footer>
+
+
+    <audio id="background-music" src="backsound.mp3" loop></audio>
+
+  </div>
+
+  <script src="script.js"></script>
+
+
+  <!--
+  <script>
+    document.querySelectorAll('.frame').forEach(frame => {
+      const atas = document.createElement('img');
+      atas.src = 'img/gbatas.png';
+      atas.className = 'gbatas';
+      
+      const bawah = document.createElement('img');
+      bawah.src = 'img/gbbawah.png';
+      bawah.className = 'gbbawah';
+      
+      frame.appendChild(atas);
+      frame.appendChild(bawah);
+    });
+  </script>
+-->
+  
+</body>
+</html>
