@@ -736,7 +736,7 @@ padding-bottom: 50px;
 }
 
 .circle-image {
-  width: 50%;         /* ukuran gambar */
+  width: 30vh;         /* ukuran gambar */
   border-radius: 50%;   /* membuat lingkaran */
   object-fit: cover;    /* gambar proporsional */
   border: 4px solid rgba(255, 255, 255, 0.8); /* border putih elegan */
@@ -755,4 +755,5 @@ padding-bottom: 50px;
     opacity: 1;
   }
 }
+
 
